@@ -109,7 +109,7 @@ module.exports = {
         });
     },
     delete : function(req,res){
-        console.log(req.body);
+        console.log(req.params);
         var val_id = req.params.id;
         var file = req.params.foto;
         model.deleteOne({_id : val_id},function(err){
